@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .error-message {
+            color: red;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>correspondence01</td>
+            <td><a href="MandAChat.html">ACCESS</a></td>
+        </tr>
+        <tr>
+            <td>correspondence02</td>
+            <td><a href="AandJChat.html">ACCESS</a></td>
+        </tr>
+        <tr>
+            <td>tempdevice</td>
+            <td><a href="tempdeviceimage.html">ACCESS</a></td>
+        </tr>
+        <tr>
+            <td>ERROR</td>
+            <td><a href="#" onclick="showError()">ACCESS</a></td>
+        </tr>
+    </table>
+
+    <div id="error-container" class="error-message" style="display: none;"></div>
+
+    <script>
+        function showError() {
+            var errorContainer = document.getElementById("error-container");
+            errorContainer.innerText = "kvnbsmrlebxgovvwocckqo01";
+            errorContainer.style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnigmaEnhancements//system</title>
+    <style>
+        body {
+            background-color: #ffffff; /* white background */
+            font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+        }
+        .login-form {
+            margin-top: 20px;
+        }
+        .login-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-form input[type="submit"] {
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>EnigmaEnhancements//system</h1>
+    <div class="login-form">
+        <form id="fake-login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="error" class="error-message" style="display: none;">Invalid username or password.</div>
+
+    <script>
+        document.getElementById('fake-login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const username = event.target.username.value;
+            const password = event.target.password.value;
+
+            if (username === 'EAdmin60' && password === 'ABNov14') {
+                window.location.href = 'info.html';
+            } else {
+                document.getElementById("error").style.display = "block"; // Display error message
+            }
+        });
+    </script>
+</body>
+</html>

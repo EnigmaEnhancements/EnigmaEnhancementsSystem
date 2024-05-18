@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldrich Burnwell Message 03</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        video {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 800px; /* Limit maximum width */
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" controls autoplay>
+        <source src="INTRUDER.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        var video = document.getElementById("video");
+
+        video.addEventListener("click", function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.controls = false; // Disable controls after the first play
+            }
+        });
+    </script>
+</body>
+</html>

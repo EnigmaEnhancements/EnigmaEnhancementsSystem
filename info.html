@@ -45,16 +45,24 @@
         </tr>
         <tr>
             <td>ERROR</td>
-            <td><a href="#" onclick="showError()">ACCESS</a></td>
+            <td><a href="#" onclick="showError('kvnbsmrlebxgovvwocckqo01')">ACCESS</a></td>
+        </tr>
+        <tr>
+            <td>ERROR02</td>
+            <td><a href="#" onclick="showError('kvnbsmrlebxgovvwocckqo02')">ACCESS</a></td>
+        </tr>
+        <tr>
+            <td>ERROR03</td>
+            <td><a href="#" onclick="showError('kvnbsmrlebxgovvwocckqo03')">ACCESS</a></td>
         </tr>
     </table>
 
     <div id="error-container" class="error-message" style="display: none;"></div>
 
     <script>
-        function showError() {
+        function showError(message) {
             var errorContainer = document.getElementById("error-container");
-            errorContainer.innerText = "kvnbsmrlebxgovvwocckqo01";
+            errorContainer.innerText = message;
             errorContainer.style.display = "block";
         }
     </script>
